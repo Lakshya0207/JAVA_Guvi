@@ -1,0 +1,58 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24039 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] -------------------< com.crowdfund:fundhub-backend >--------------------
+[INFO] Building fundhub-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ fundhub-backend >>>
+[INFO] Loaded 24024 auto-discovered prefixes for remote repository google-maven-central-copy (prefixes-google-maven-central-copy.txt)
+[INFO] Loaded 24039 auto-discovered prefixes for remote repository maven-central (prefixes-maven-central.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ fundhub-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ fundhub-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ fundhub-backend ---
+[INFO] skip non existing resourceDirectory E:\JAVA project\Project\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ fundhub-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ fundhub-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ fundhub-backend ---
+[INFO] Loaded 50 auto-discovered prefixes for remote repository ow2-snapshot (prefixes-ow2-snapshot.txt)
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-10-09T23:50:49.773+05:30  INFO 4516 --- [           main] com.crowdfund.CrowdfundApplication       : Starting CrowdfundApplication using Java 21.0.12 with PID 4516 (E:\JAVA project\Project\backend\target\classes started by HP in E:\JAVA project\Project\backend)
+2026-10-09T23:50:49.777+05:30  INFO 4516 --- [           main] com.crowdfund.CrowdfundApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-10-09T23:50:50.950+05:30  INFO 4516 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-10-09T23:50:50.968+05:30  INFO 4516 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-09T23:50:50.968+05:30  INFO 4516 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-10-09T23:50:51.053+05:30  INFO 4516 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-09T23:50:51.054+05:30  INFO 4516 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1203 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-10-09T23:50:51.089+05:30  INFO 4516 --- [           main] com.crowdfund.config.FirebaseConfig      : Loading Firebase credentials from path: C:\keys\keys.json
+2026-10-09T23:50:51.388+05:30  INFO 4516 --- [           main] com.crowdfund.config.FirebaseConfig      : Successfully initialized Firebase Admin SDK for FundHub project [java-guvi]
+2026-10-09T23:50:52.543+05:30  INFO 4516 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-10-09T23:50:52.551+05:30  INFO 4516 --- [           main] com.crowdfund.CrowdfundApplication       : Started CrowdfundApplication in 3.231 seconds (process running for 3.809)
+2026-10-09T23:51:08.094+05:30  INFO 4516 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-09T23:51:08.094+05:30  INFO 4516 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-09T23:51:08.095+05:30  INFO 4516 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
