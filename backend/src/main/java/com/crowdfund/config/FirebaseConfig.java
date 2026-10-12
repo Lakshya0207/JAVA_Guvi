@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.cloud.FirestoreClient;
 
 /**
- * Initializes the Firebase Admin SDK for FundHub.
+ * Initializes the Firebase Admin SDK for RiseFund.
  *
  * Supports credential resolution via:
  * 1. FIREBASE_SERVICE_ACCOUNT_JSON (direct JSON string, ideal for cloud hosting)
@@ -63,7 +63,7 @@ public class FirebaseConfig {
                 .setProjectId(projectId)
                 .build();
 
-        log.info("Successfully initialized Firebase Admin SDK for FundHub project [{}]", projectId);
+        log.info("Successfully initialized Firebase Admin SDK for RiseFund project [{}]", projectId);
         return FirebaseApp.initializeApp(options);
     }
 
@@ -106,8 +106,11 @@ public class FirebaseConfig {
         if (userHome != null) {
             Path[] commonLocations = new Path[] {
                 Paths.get("C:", "keys", "keys.json"),
+                Paths.get("C:", "keys", "risefund-key.json"),
                 Paths.get("C:", "keys", "fundhub-key.json"),
+                Paths.get(userHome, ".keys", "risefund-key.json"),
                 Paths.get(userHome, ".keys", "fundhub-key.json"),
+                Paths.get(userHome, "keys", "risefund-key.json"),
                 Paths.get(userHome, "keys", "fundhub-key.json"),
                 Paths.get(userHome, ".keys", "crowdfund-key.json"),
                 Paths.get(userHome, "keys", "crowdfund-key.json")
@@ -133,13 +136,13 @@ public class FirebaseConfig {
         // 6. Safe local fallback if allowed
         if (allowDemoFallback) {
             log.warn("----------------------------------------------------------------------------------------");
-            log.warn("[FundHub Local Development Notice]");
+            log.warn("[RiseFund Local Development Notice]");
             log.warn("No service-account key file was detected in FIREBASE_SERVICE_ACCOUNT_PATH.");
             log.warn("Starting backend with local credentials for testing and health verification.");
             log.warn("For live database transactions, set your key path in PowerShell:");
-            log.warn("  $env:FIREBASE_SERVICE_ACCOUNT_PATH=\"C:\\keys\\fundhub-key.json\"");
+            log.warn("  $env:FIREBASE_SERVICE_ACCOUNT_PATH=\"C:\\keys\\risefund-key.json\"");
             log.warn("----------------------------------------------------------------------------------------");
-            return GoogleCredentials.create(new AccessToken("fundhub-local-dev-token", new Date(System.currentTimeMillis() + 86400000L)));
+            return GoogleCredentials.create(new AccessToken("risefund-local-dev-token", new Date(System.currentTimeMillis() + 86400000L)));
         }
 
         // 7. Strict failure if fallback is disabled

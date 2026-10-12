@@ -1,7 +1,7 @@
 rules_version = '2';
 
 // =========================================================
-// FundHub - Firestore Security Rules (FINAL)
+// RiseFund - Firestore Security Rules (FINAL)
 //
 // The browser can only READ data that belongs to the signed-in
 // user's role. ALL writes are rejected here and are performed by

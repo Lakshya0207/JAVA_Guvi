@@ -1,5 +1,5 @@
 /* =========================================================
-   FUNDHUB - FRONTEND
+   RISEFUND - FRONTEND
    Browser: UI, sign-in, live reads (Firestore listeners).
    Java API: every write (approve, reject, roles, contribute...).
 ========================================================= */
@@ -42,7 +42,6 @@ import {
    Firestore rules + the Java backend.)
 ========================================================= */
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyD3OkhzdoBSesISYqVzEBJm1_nK-7iSkEY",
   authDomain: "java-guvi.firebaseapp.com",
@@ -53,7 +52,6 @@ const firebaseConfig = {
   appId: "1:713512565889:web:5743ebd605ba8d1d5e6180",
   measurementId: "G-Q46P6CTERZ"
 };
-
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -712,7 +710,7 @@ async function enterApplication(user) {
 
     try {
 
-        showLoading("Preparing your FundHub dashboard...");
+        showLoading("Preparing your RiseFund dashboard...");
 
         await loadUserProfile(user.uid);
 

@@ -1,5 +1,5 @@
 /* =========================================================
-   FUNDHUB - FRONTEND
+   RISEFUND - FRONTEND
    Browser: UI, sign-in, live reads (Firestore listeners).
    Java API: every write (approve, reject, roles, contribute...).
 ========================================================= */
@@ -710,7 +710,7 @@ async function enterApplication(user) {
 
     try {
 
-        showLoading("Preparing your FundHub dashboard...");
+        showLoading("Preparing your RiseFund dashboard...");
 
         await loadUserProfile(user.uid);
 

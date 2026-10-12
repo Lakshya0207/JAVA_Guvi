@@ -1,6 +1,6 @@
-# FundHub — Modern Java Crowdfunding Platform
+# RiseFund — Modern Java Crowdfunding Platform
 
-FundHub is a modern, full-stack Java web application for managing community fundraising campaigns. It features three distinct user roles (**ADMIN**, **CREATOR**, and **CONTRIBUTOR**), an atomic server-side transaction engine, and a premium responsive UI.
+RiseFund is a modern, full-stack Java web application for managing community fundraising campaigns. It features three distinct user roles (**ADMIN**, **CREATOR**, and **CONTRIBUTOR**), an atomic server-side transaction engine, and a premium responsive UI.
 
 ---
 
@@ -67,7 +67,7 @@ FundHub is a modern, full-stack Java web application for managing community fund
 ## Demo / Simulated Contribution Notice
 
 > **Academic / Demonstration Mode:**
-> FundHub is strictly designed as an academic demonstration. It does **NOT** integrate real payment gateways (Razorpay, Stripe, PayPal, UPI) and does **NOT** collect sensitive banking or card credentials. Contributions are recorded as simulated ledger entries with `simulated: true` stored in Firestore.
+> RiseFund is strictly designed as an academic demonstration. It does **NOT** integrate real payment gateways (Razorpay, Stripe, PayPal, UPI) and does **NOT** collect sensitive banking or card credentials. Contributions are recorded as simulated ledger entries with `simulated: true` stored in Firestore.
 
 ---
 
@@ -94,7 +94,7 @@ c:\Users\ayush\OneDrive\Desktop\Java Sem 3\Project/
 │       │       └── application.properties
 │       └── test/java/com/crowdfund/ # 23 Automated JUnit 5 / Mockito Unit Tests
 ├── frontend/
-│   ├── index.html                  # FundHub Single-Page Application
+│   ├── index.html                  # RiseFund Single-Page Application
 │   ├── style.css                   # Modern Design System (Indigo/Slate, Glassmorphism, Responsive)
 │   ├── script.js                   # Client interactions & live read listeners
 │   ├── config.js                   # Backend endpoint configuration
@@ -118,14 +118,14 @@ c:\Users\ayush\OneDrive\Desktop\Java Sem 3\Project/
 
 ### 1. Configure Firebase Service Account Key
 1. In the Firebase Console, go to **Project Settings** $\rightarrow$ **Service Accounts** $\rightarrow$ **Generate New Private Key**.
-2. Save the JSON file outside your repository (e.g., `C:\keys\fundhub-key.json`).
+2. Save the JSON file outside your repository (e.g., `C:\keys\risefund-key.json`).
 3. Set the environment variable:
    ```powershell
    # Windows (PowerShell)
-   $env:FIREBASE_SERVICE_ACCOUNT_PATH="C:\keys\fundhub-key.json"
+   $env:FIREBASE_SERVICE_ACCOUNT_PATH="C:\keys\risefund-key.json"
 
    # macOS / Linux (Bash)
-   export FIREBASE_SERVICE_ACCOUNT_PATH="/path/to/fundhub-key.json"
+   export FIREBASE_SERVICE_ACCOUNT_PATH="/path/to/risefund-key.json"
    ```
 
 ### 2. Run the Java Backend
